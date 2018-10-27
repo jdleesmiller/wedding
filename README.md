@@ -83,6 +83,8 @@ You can of course customize everything, but here are some places to start:
 
 - [`app/views/application`](app/views/application) &mdash; the address on the home page and the addresses in the emails
 
+- [`app/views/welcome`](app/views/welcome) &mdash; the home page content
+
 - [`public/wedding.ics`](public/wedding.ics) &mdash; the calendar invite
 
   - this is just a sample file; you probably want to [generate one](https://apps.marudot.com/ical/)
