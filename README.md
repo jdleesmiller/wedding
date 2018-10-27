@@ -96,22 +96,22 @@ You can of course customize everything, but here are some places to start:
 
 - [`app/assets/stylesheets/application.scss`](app/assets/stylesheets/application.scss) &mdash; theme colors and bootstrap customization
 
-```scss
-$font-family-sans-serif: Montserrat, Helvetica, Arial, sans-serif;
-$font-family-serif: Arvo, Georgia, "Times New Roman", Times, serif;
+  ```sass
+  $font-family-sans-serif: Montserrat, Helvetica, Arial, sans-serif;
+  $font-family-serif: Arvo, Georgia, "Times New Roman", Times, serif;
 
-$font-family-base: $font-family-serif;
-$headings-font-family: $font-family-sans-serif;
+  $font-family-base: $font-family-serif;
+  $headings-font-family: $font-family-sans-serif;
 
-$body-color: rgba(28, 13, 10, 0.7);
-$headings-color: rgba(28, 13, 10, 0.7);
+  $body-color: rgba(28, 13, 10, 0.7);
+  $headings-color: rgba(28, 13, 10, 0.7);
 
-$theme-colors: (
-  "primary": #ff745c
-);
+  $theme-colors: (
+    "primary": #ff745c
+  );
 
-$enable-rounded: false;
-```
+  $enable-rounded: false;
+  ```
 
 ## Default photo credits
 
