@@ -1,0 +1,19 @@
+<div class="form-group row">
+  <div class="col-md-3">
+    <%= form.label :first_name, 'First Name', class: 'col-form-label' %>
+    <span class="wedding-required">*</span>
+  </div>
+  <div class="col-md-9">
+    <%= form.text_field :first_name, id: "#{id_stem}_first_name", class: 'form-control', autofocus: true, required: true %>
+  </div>
+</div>
+
+<div class="form-group row">
+  <div class="col-md-3">
+    <%= form.label :last_name, 'Last Name', class: 'col-form-label' %>
+    <span class="wedding-required">*</span>
+  </div>
+  <div class="col-md-9">
+    <%= form.text_field :last_name, id: "#{id_stem}_last_name", class: 'form-control', required: true %>
+  </div>
+</div>

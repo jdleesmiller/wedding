@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guest: one
+  first_name: Plus
+  last_name: One
+  diet: Level 1 Vegan
+  child: false
+
+two:
+  guest: one
+  first_name: Plus
+  last_name: Two
+  diet: Level 2 Vegan
+  child: false

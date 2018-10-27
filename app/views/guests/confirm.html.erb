@@ -1,0 +1,98 @@
+<div class="container">
+  <div class="row">
+    <div class="offset-lg-2 col-lg-8">
+      <%= render partial: 'leader' %>
+      <%= render partial: 'rsvp_nav', locals: { active: 3 } %>
+
+      <h2>Confirm</h2>
+
+      <%= form_with(model: @guest, url: complete_guest_path(@guest), local: true) do |form| %>
+      <div class="row">
+        <div class="col-md-12">
+          <%= errors_for(@guest) %>
+        </div>
+      </div>
+
+      <% if @guest.attending? %>
+      <h3>Your Details</h3>
+      <div class="card mb-3">
+        <h5 class="card-header"><%= @guest.name %></h5>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              Email
+            </div>
+            <div class="col-md-8">
+              <p><tt><%= @guest.email %></tt></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              Dietary Preferences
+            </div>
+            <div class="col-md-8">
+              <% if @guest.diet.present? %>
+                <pre><%= @guest.diet %></pre>
+              <% else %>
+                <p>(None)</p>
+              <% end %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              Song Suggestions
+            </div>
+            <div class="col-md-8">
+              <% if @guest.songs.present? %>
+                <pre><%= @guest.songs %></pre>
+              <% else %>
+                <p>(None)</p>
+              <% end %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <%= link_to 'Edit', guest_path(@guest), class: 'card-link', data: { disable_with: 'Loading...' } %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Plus Ones</h3>
+      <% if @guest.plus_ones.any? %>
+        <%= render @guest.plus_ones %>
+      <% else %>
+        <p>(None &mdash; just you.)</p>
+      <% end %>
+      <% else %>
+      <p>Sorry to hear you won't be joining us!</p>
+      <h3>Your Details</h3>
+      <div class="card mb-3">
+        <h5 class="card-header"><%= @guest.name %></h5>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              Email
+            </div>
+            <div class="col-md-8">
+              <p><tt><%= @guest.email %></tt></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+
+      <h3>Other Comments?</h3>
+
+      <%= form.text_area :notes, class: 'form-control' %>
+      <small class="form-text text-muted">Anything else you'd like to let us know?</small>
+
+      <div class="row guests-buttons">
+        <div class="offset-md-3 col-md-6 text-center">
+          <%= form.submit 'Complete RSVP', class: 'btn btn-primary', data: { disable_with: 'Sending...' } %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

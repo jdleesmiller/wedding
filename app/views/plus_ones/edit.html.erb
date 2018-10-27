@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="offset-lg-2 col-lg-8">
+      <%= render partial: 'guests/leader' %>
+      <%= render partial: 'guests/rsvp_nav', locals: { active: 2 } %>
+
+      <h2>Edit Plus One</h2>
+      <%= render partial: 'form', locals: { submit_action: 'Save Plus One' } %>
+    </div>
+  </div>
+</div>

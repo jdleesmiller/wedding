@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  token: abcdefghijkmnopqrstuv
+  email: one@example.com
+  first_name: Guest
+  last_name: One
+
+two:
+  token: vutsrqponmkjihgfedcba
+  email: two@example.com
+  first_name: Guest
+  last_name: Two

@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="offset-lg-2 col-lg-8">
+      <%= render partial: 'leader' %>
+      <%= render partial: 'rsvp_nav', locals: { active: 1 } %>
+
+      <h2>About You</h2>
+
+      <%= form_with(model: @guest, method: :patch, local: true, id: 'guest-edit-form') do |form| %>
+      <div class="row">
+        <div class="col-md-12">
+          <%= errors_for(@guest) %>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-md-3">
+          <%= form.label :email, class: 'col-form-label' %>
+          <span class="wedding-required">*</span>
+        </div>
+        <div class="col-md-9">
+          <%= form.email_field :email, id: 'guest_email', class: 'form-control', required: true %>
+        </div>
+      </div>
+
+      <%= render partial: 'name', locals: { form: form, id_stem: 'guest' } %>
+
+      <div class="form-group row">
+        <div class="offset-md-3 col-md-9">
+          <p><strong>Will you be joining us?</strong></p>
+          <div class="form-check form-check-inline">
+            <%= form.radio_button :attending, 'true', checked: true, id: 'guest_attending_true', class: 'form-check-input' %>
+            <%= form.label :attending, 'Yes', value: 'true', class: 'form-check-label' %>
+          </div>
+          <div class="form-check form-check-inline">
+            <%= form.radio_button :attending, 'false', id: 'guest_attending_false', class: 'form-check-input' %>
+            <%= form.label :attending, 'No', value: 'false', class: 'form-check-label' %>
+          </div>
+        </div>
+      </div>
+
+      <div class="guest-attending-only">
+      <%= render partial: 'dietary_preferences', locals: { form: form, id_stem: 'guest' } %>
+
+      <div class="form-group row">
+        <div class="col-md-3">
+          <%= form.label :songs, 'Song Suggestions', class: 'col-form-label' %>
+        </div>
+        <div class="col-md-9">
+          <%= form.text_area :songs, id: 'guest_songs', class: 'form-control' %>
+          <small class="form-text text-muted">We're crowd sourcing our playlist! Choose some songs you'd like to hear.</small>
+        </div>
+      </div>
+      </div>
+
+      <div class="row guests-buttons">
+        <div class="col-md-3">
+          <span class="wedding-required">* Required</span>
+        </div>
+        <div class="col-md-6 text-center">
+          <%= form.submit 'Continue', class: 'btn btn-primary', data: { disable_with: 'Sending...' } %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

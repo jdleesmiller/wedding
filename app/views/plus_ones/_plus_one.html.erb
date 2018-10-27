@@ -1,0 +1,31 @@
+<div class="card mb-3">
+  <h5 class="card-header"><%= plus_one.name %></h5>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        Dietary Preferences
+      </div>
+      <div class="col-md-8">
+        <% if plus_one.diet.present? %>
+          <pre><%= plus_one.diet %></pre>
+        <% else %>
+          <p>(None)</p>
+        <% end %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        Child
+      </div>
+      <div class="col-md-8">
+        <p><%= plus_one.child ? 'Yes' : 'No' %></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-right">
+        <%= link_to 'Edit', edit_guest_plus_one_path(plus_one.guest, plus_one), class: 'card-link', data: { disable_with: 'Loading...' } %>
+        <%= link_to 'Remove', guest_plus_one_path(plus_one.guest, plus_one), method: :delete, class: 'card-link', data: { disable_with: 'Removing...', confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Arvo:400');
+
+$font-family-sans-serif: Montserrat, Helvetica, Arial, sans-serif;
+$font-family-serif: Arvo, Georgia, "Times New Roman", Times, serif;
+
+$font-family-base: $font-family-serif;
+$headings-font-family: $font-family-sans-serif;
+
+$body-color: rgba(28, 13, 10, 0.7);
+$headings-color: rgba(28, 13, 10, 0.7);
+
+$theme-colors: (
+  "primary": #ff745c
+);
+
+$enable-rounded: false;
+
+@import "bootstrap";
+@import "guests";
+@import "welcome";
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0.0833333em;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: theme-color("primary");
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.0833333em;
+  text-transform: uppercase;
+
+  svg {
+    fill: currentColor;
+    margin: 0 auto;
+    height: 100px;
+  }
+}
+
+.wedding-cta-btn {
+  letter-spacing: 2px;
+  padding: 0.75rem 1.5rem;
+}
+
+.wedding-required {
+  color: theme-color("primary");
+}

@@ -1,0 +1,32 @@
+<%= form_with(model: [@guest, @plus_one], local: true) do |form| %>
+  <div class="row">
+    <div class="col-md-12">
+      <%= errors_for(@plus_one) %>
+    </div>
+  </div>
+
+  <%= render partial: 'guests/name', locals: { form: form, id_stem: 'plus_one' } %>
+
+  <%= render partial: 'guests/dietary_preferences', locals: { form: form, id_stem: 'plus_one' } %>
+
+  <div class="form-group row">
+    <div class="offset-md-3 col-md-9">
+      <div class="form-check form-check-inline">
+        <%= form.check_box :child, id: 'plus_one_child', class: 'form-check-input' %>
+        <%= form.label :child, 'Child (12 or under)', class: 'form-check-label' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row guests-buttons">
+    <div class="col-md-3">
+      <span class="wedding-required">* Required</span>
+    </div>
+    <div class="col-md-6 text-center">
+      <%= form.submit submit_action, class: 'btn btn-primary', data: { disable_with: 'Sending...' } %>
+    </div>
+    <div class="col-md-3 text-right">
+      <%= link_to 'Cancel', guest_plus_ones_path(@guest), class: 'btn btn-secondary' %>
+    </div>
+  </div>
+<% end %>

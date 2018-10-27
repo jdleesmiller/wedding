@@ -1,0 +1,6 @@
+web:
+  volumes:
+    - .:/home/app/wedding
+    - /usr/local/bundle
+  env_file:
+    - development.env
