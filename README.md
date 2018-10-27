@@ -65,4 +65,4 @@ bin/rails test
 - https://www.pexels.com/photo/selective-focus-photography-of-two-penguins-689784/
 - https://www.pexels.com/photo/cold-glacier-iceberg-melting-48178/
 - https://www.pexels.com/photo/flock-of-penguins-1036155/
-- https://www.pexels.com/photo/pink-petaled-flower-boquette-122734/
+- https://www.pexels.com/photo/beautiful-flowers-bloom-blooming-blossom-548389/
