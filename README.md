@@ -7,8 +7,8 @@ This is a simple rails app for distributing wedding information and managing the
 ## Is it any good?
 
 > THIS WEBSITE IS AWESOME! Best wedding invite ever.
+> -- One of our guests
 
-- One of our guests
 
 ## Features
 
