@@ -132,6 +132,22 @@ If set, the website will use an invisible reCAPTCHA to prevent spam. You can get
 - `RECAPTCHA_SITE_KEY` &mdash; the `data-sitekey` for the Client side integration
 - `RECAPTCHA_SECRET_KEY` &mdash; the `secret` for the Server side integration
 
+## License
+
+[BSD License](LICENSE.md)
+
+## Credits
+
+Thanks to @Hopet for help with design and copy.
+
+### Design
+
+The default design is based on https://naomi-demo.squarespace.com/ .
+
+### Photos
+
+The default photos are from Pexels:
+
 - https://www.pexels.com/photo/selective-focus-photography-of-two-penguins-689784/
 - https://www.pexels.com/photo/cold-glacier-iceberg-melting-48178/
 - https://www.pexels.com/photo/flock-of-penguins-1036155/
