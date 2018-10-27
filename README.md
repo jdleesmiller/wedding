@@ -1,6 +1,9 @@
-# Rails App for Weddings and Events
+# Rails App for Weddings and Similar Events
 
-This is a simple rails app for managing the guest list for a wedding (or similar event). It's intended to be easy to customize.
+So you're getting married :tada:
+
+This is a simple rails app for distributing wedding information and managing the guest list. You will probably decide to build your own, like I did, but if you like, you can start with this one. It's been through at least one wedding successfully!
+
 ## Is it any good?
 
 > THIS WEBSITE IS AWESOME! Best wedding invite ever.
