@@ -85,6 +85,10 @@ You can of course customize everything, but here are some places to start:
 
 - [`app/views/welcome`](app/views/welcome) &mdash; the home page content
 
+- [`development.env`](development.env.template) &mdash; [environment variables](#Environment-Variables) in development
+
+  - set emails and other secrets that should not be checked in
+
 - [`public/wedding.ics`](public/wedding.ics) &mdash; the calendar invite
 
   - this is just a sample file; you probably want to [generate one](https://apps.marudot.com/ical/)
@@ -115,7 +119,18 @@ You can of course customize everything, but here are some places to start:
   $enable-rounded: false;
   ```
 
-## Default photo credits
+## Environment Variables
+
+- `CANONICAL_URL` &mdash; your website's domain, e.g. `www.mywedding.com`
+- `CONTACT_EMAIL` &mdash; email address users can use to contact you, e.g. `info@mywedding.com`
+- `FROM_EMAIL` &mdash; email address emails will come from
+
+### ReCAPTCHA
+
+If set, the website will use an invisible reCAPTCHA to prevent spam. You can get these from [Google reCAPTCHA's admin page](https://www.google.com/recaptcha/admin). Be sure to choose "Invisible" for the type.
+
+- `RECAPTCHA_SITE_KEY` &mdash; the `data-sitekey` for the Client side integration
+- `RECAPTCHA_SECRET_KEY` &mdash; the `secret` for the Server side integration
 
 - https://www.pexels.com/photo/selective-focus-photography-of-two-penguins-689784/
 - https://www.pexels.com/photo/cold-glacier-iceberg-melting-48178/
