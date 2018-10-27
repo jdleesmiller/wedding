@@ -122,8 +122,8 @@ You can of course customize everything, but here are some places to start:
 ## Environment Variables
 
 - `CANONICAL_URL` &mdash; your website's domain, e.g. `www.mywedding.com`
-- `CONTACT_EMAIL` &mdash; email address users can use to contact you, e.g. `info@mywedding.com`
-- `FROM_EMAIL` &mdash; email address emails will come from
+- `CONTACT_EMAIL` &mdash; the email address that users can use to contact you, e.g. `info@mywedding.com`
+- `FROM_EMAIL` &mdash; the email address that confirmations emails will come from
 
 ### ReCAPTCHA
 
