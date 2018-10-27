@@ -81,10 +81,37 @@ You can of course customize everything, but here are some places to start:
   photo_credits: 'Photo Credits: Pexels'
   ```
 
+- [`app/views/application`](app/views/application) &mdash; the address on the home page and the addresses in the emails
+
+- [`public/wedding.ics`](public/wedding.ics) &mdash; the calendar invite
+
+  - this is just a sample file; you probably want to [generate one](https://apps.marudot.com/ical/)
+
+### Styling
+
 - [`app/assets/images`](app/assets/images) &mdash; the images
 
   - `jumbo.jpg` is the title image at the top of the home page
   - `rsvp.jpg` is the title image at the top of the RSVP pages
+
+- [`app/assets/stylesheets/application.scss`](app/assets/stylesheets/application.scss) &mdash; theme colors and bootstrap customization
+
+```scss
+$font-family-sans-serif: Montserrat, Helvetica, Arial, sans-serif;
+$font-family-serif: Arvo, Georgia, "Times New Roman", Times, serif;
+
+$font-family-base: $font-family-serif;
+$headings-font-family: $font-family-sans-serif;
+
+$body-color: rgba(28, 13, 10, 0.7);
+$headings-color: rgba(28, 13, 10, 0.7);
+
+$theme-colors: (
+  "primary": #ff745c
+);
+
+$enable-rounded: false;
+```
 
 ## Default photo credits
 
