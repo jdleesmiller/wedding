@@ -133,6 +133,18 @@ You can of course customize everything, but here are some places to start:
 - `CONTACT_EMAIL` &mdash; the email address that users can use to contact you, e.g. `info@mywedding.com`
 - `FROM_EMAIL` &mdash; the email address that confirmations emails will come from
 
+### Sending Email
+
+There are environment variables that correspond to each [`smtp_settings`](https://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-configuration) key in the ActionMailer config.
+
+- `SMTP_ADDRESS` &mdash; name of the SMTP server
+- `SMTP_PORT` &mdash; port the SMTP server listens on (default `587`)
+- `SMTP_DOMAIN` &mdash; HELO domain, if required
+- `SMTP_USER_NAME` &mdash; user name for SMTP server
+- `SMTP_PASSWORD` &mdash; password for SMTP server
+- `SMTP_AUTHENTICATION` &mdash; authentication type (default `plain`)
+- `SMTP_ENABLE_STARTTLS_AUTO` &mdash; automatically detect if STARTTLS is enabled and use it if so (default `true`)
+
 ### ReCAPTCHA
 
 If set, the website will use an invisible reCAPTCHA to prevent spam. You can get these from [Google reCAPTCHA's admin page](https://www.google.com/recaptcha/admin). Be sure to choose "Invisible" for the type.
