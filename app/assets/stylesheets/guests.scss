@@ -3,9 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #guests-leader {
-  background:
-    linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-    image-url('flowers.jpg') center center no-repeat;
+  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+    image-url("rsvp.jpg") center center no-repeat;
   background-size: cover;
 
   h1 {
@@ -17,7 +16,9 @@
   padding-bottom: $spacer;
 
   @media (max-width: 768px) {
-    li.nav-item { width:100%; }
+    li.nav-item {
+      width: 100%;
+    }
   }
 }
 

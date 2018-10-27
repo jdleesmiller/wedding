@@ -71,7 +71,7 @@ You can of course customize everything, but here are some places to start:
 
 ### Content
 
-- [`config/locales/en.yml`](config/locales/en.yml)
+- [`config/locales/en.yml`](config/locales/en.yml) &mdash; key strings
 
   ```yml
   wedding_name: "Jack & Jill's Wedding"
@@ -80,6 +80,11 @@ You can of course customize everything, but here are some places to start:
   wedding_location: 'South Pole'
   photo_credits: 'Photo Credits: Pexels'
   ```
+
+- [`app/assets/images`](app/assets/images) &mdash; the images
+
+  - `jumbo.jpg` is the title image at the top of the home page
+  - `rsvp.jpg` is the title image at the top of the RSVP pages
 
 ## Default photo credits
 
