@@ -2,13 +2,12 @@
 
 So you're getting married :tada:
 
-This is a simple rails app for distributing wedding information and managing the guest list. You will probably decide to build your own, like I did, but if you like, you can start with this one. It's been through at least one wedding successfully!
+This is a simple rails app for distributing wedding information and managing the guest list. You will probably decide to build your own (like me&hellip;) but if you like you can start with this one. It's been through at least one wedding successfully!
 
 ## Is it any good?
 
 > THIS WEBSITE IS AWESOME! Best wedding invite ever.
 > -- One of our guests
-
 
 ## Features
 
@@ -52,7 +51,7 @@ docker-compose logs -f
 
 By default, the app will run on http://localhost:3000
 
-The admin interface is on http://localhost:3000/admin
+The admin interface is on http://localhost:3000/admin. Once you are logged into the admin, you can go to Admin Users, find the default admin user, and change its email address, if you like (you will need to re-enter the password).
 
 To access the database:
 
@@ -151,6 +150,37 @@ If set, the website will use an invisible reCAPTCHA to prevent spam. You can get
 
 - `RECAPTCHA_SITE_KEY` &mdash; the `data-sitekey` for the Client side integration
 - `RECAPTCHA_SECRET_KEY` &mdash; the `secret` for the Server side integration
+
+## Deployment
+
+Heroku makes it easy to deploy rails apps like this one. The free postgres database is enough, unless you have &gt; 10k guests! You can set up a Heroku app and connect it to your GitHub repo.
+
+You must set the canonical host and email addresses in order to be able to send email:
+
+```
+heroku config:set \
+  CANONICAL_HOST=www.mywedding.com \
+  CONTACT_EMAIL='Example Name <example@example.com>' \
+  FROM_EMAIL='Example Name <example@example.com>'
+```
+
+You will also need to set up SMTP by setting the config variables above. One way to do this is to use your [Google Mail account's SMTP server](https://www.digitalocean.com/community/tutorials/how-to-use-google-s-smtp-server).
+
+Then you can get up and running with:
+
+```
+heroku run rails db:migrate db:seed
+```
+
+Watch the output of `db:seed` for the default admin credentials, like in development. The admin console will be available on `/admin`.
+
+If you like, you can also turn on reCAPTCHA, as above.
+
+```
+heroku config:set \
+  RECAPTCHA_SITE_KEY=... \
+  RECAPTCHA_SECRET_KEY=...
+```
 
 ## License
 
