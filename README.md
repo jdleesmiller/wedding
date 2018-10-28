@@ -7,17 +7,46 @@ This is a simple rails app for distributing wedding information and managing the
 ## Is it any good?
 
 > THIS WEBSITE IS AWESOME! Best wedding invite ever.
-> -- One of our guests
+> &mdash; One of our guests
 
 ## Features
 
 - Guests can RSVP, including dietary requirements and plus ones
 - Guests can manage their own RSVPs using a secret link in an email (no user name / password needed)
 - Responsive design on home page and RSVP pages
-- Customizable [styling and wording](#Customization)
+- Customizable [styling and wording](#customization)
 - [Active Admin](https://activeadmin.info/) interface to manage the attendee list
 - Optional invisible [reCAPTCHA](https://www.google.com/recaptcha) integration to avoid spam
 - Sets headers to avoid being indexed by search engines
+
+## Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [Rails App for Weddings and Similar Events](#rails-app-for-weddings-and-similar-events)
+  - [Is it any good?](#is-it-any-good)
+  - [Features](#features)
+  - [What does it look like?](#what-does-it-look-like)
+  - [How does it work?](#how-does-it-work)
+  - [Development](#development)
+    - [Initial Setup](#initial-setup)
+    - [Running the App](#running-the-app)
+  - [Customization](#customization)
+    - [Content](#content)
+    - [Styling](#styling)
+  - [Environment Variables](#environment-variables)
+    - [Sending Email](#sending-email)
+    - [ReCAPTCHA](#recaptcha)
+  - [Deployment](#deployment)
+  - [License](#license)
+  - [Credits](#credits)
+    - [Design](#design)
+    - [Photos](#photos)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## What does it look like?
 
@@ -84,7 +113,7 @@ bin/rails test
 
 ## Customization
 
-You can of course customize everything, but here are some places to start:
+You can of course customize everything by changing the code, but here are some useful places to start:
 
 ### Content
 
@@ -102,7 +131,7 @@ You can of course customize everything, but here are some places to start:
 
 - [`app/views/welcome`](app/views/welcome) &mdash; the home page content
 
-- [`development.env`](development.env.template) &mdash; [environment variables](#Environment-Variables) in development
+- [`development.env`](development.env.template) &mdash; [environment variables](#environment-variables) in development
 
   - set emails and other secrets that should not be checked in
 
@@ -214,7 +243,7 @@ The default design is based on https://naomi-demo.squarespace.com/ .
 
 ### Photos
 
-The default photos are from Pexels:
+The photos for the demo are from [Pexels](https://www.pexels.com/):
 
 - https://www.pexels.com/photo/selective-focus-photography-of-two-penguins-689784/
 - https://www.pexels.com/photo/cold-glacier-iceberg-melting-48178/
