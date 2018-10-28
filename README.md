@@ -23,6 +23,12 @@ This is a simple rails app for distributing wedding information and managing the
 
 ![Screenshot of the home page](docs/homepage_big.jpg)
 
+## How does it work?
+
+Here's a map of all the flows through the app, from the home page to the RSVP flow and also some of the separate admin interface. [Click here to expand the image.](docs/wedding_flow.jpg) And [here is a higher resolution PDF version](docs/wedding_flow.pdf).
+
+![Flow chart showing the application states.](docs/wedding_flow.jpg)
+
 ## Development
 
 ### Initial Setup
