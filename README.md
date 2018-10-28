@@ -196,9 +196,17 @@ heroku config:set \
 
 [BSD License](LICENSE.md)
 
+## Related Projects
+
+I'm not the first rails developer to build a wedding website:
+
+- https://github.com/adambutler/wedding-on-rails
+- https://github.com/agoln/wedding
+- https://github.com/andxyz/rails-rwedding
+
 ## Credits
 
-Thanks to @Hopet for help with design and copy.
+Thanks to [@Hopet](https://github.com/Hopet) for help with design and copy.
 
 ### Design
 
