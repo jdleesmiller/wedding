@@ -1,3 +1,0 @@
-# Wedding
-
-Testing out theme...

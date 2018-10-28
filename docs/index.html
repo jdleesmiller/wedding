@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="offset-lg-2 col-lg-8">
+        <div class="jumbotron text-center">
+          <h1 class="display-4">
+            A Rails App for your Wedding
+          </h1>
+          <p class="lead">
+            Here's a simple rails app for distributing wedding information and managing the guest list. You're probably going to build your own anyway (like me!) but this may be a useful place to start.
+          </p>
+          <p class="my-3">
+            <a href="https://github.com/jdleesmiller/wedding" class="btn btn-primary btn-lg">Get the Code</a><br/>
+          </p>
+        </div>
+
+        <blockquote class="blockquote pl-3 text-center">
+          <p class="mb-0">THIS WEBSITE IS AWESOME! Best wedding invite ever.</p>
+          <footer class="blockquote-footer">One of our guests</footer>
+        </blockquote>
+
+        <h2>Features</h2>
+        <ul>
+          <li>Guests can RSVP, including dietary requirements and plus ones</li>
+          <li>Guests can manage their own RSVPs using a secret link in an email (no user name / password needed)</li>
+          <li>Responsive design on home page and RSVP pages</li>
+          <li>Customizable <a href="https://github.com/jdleesmiller/wedding#Customization">styling (with Bootstrap) and wording</a></li>
+          <li><a href="https://activeadmin.info/">Active Admin</a> interface to manage the attendee list</li>
+          <li>Optional invisible <a href="https://www.google.com/recaptcha">Google reCAPTCHA</a> integration to avoid spam</li>
+          <li>Sets headers to avoid being indexed by search engines</li>
+        </ul>
+
+        <h2>What does it look like?</h2>
+        <p>For the demo, the wedding is South Pole themed. You can of course change that! <a href="./homepage_big.jpg">Click to expand the image.</a></p>
+        <p class="text-center">
+          <a href="./homepage_big.jpg">
+            <img src="./homepage_big.jpg" class="img-fluid">
+          </a>
+        </p>
+
+        <h3>How does it work?</h3>
+        <p>
+          Here's a map of all the flows through the app, from the home page to the RSVP flow and also some of the separate admin interface.
+          <a href="./wedding_flow.jpg">Click to expand the image.</a>
+          And <a href="./wedding_flow.pdf">here is a higher-resolution PDF version</a>.
+        </p>
+        <p class="text-center">
+          <a href="./wedding_flow.jpg">
+            <img src="./wedding_flow.jpg" class="img-fluid">
+          </a>
+        </p>
+        <p>This diagram was produced in <a href="https://realtimeboard.com/">Realtime Board</a>.
+
+        <h2>Reflections</h2>
+        <p>
+          Building this website was fun and an excellent wedding procrastination project.
+          Overall it was well-received, and a few people asked me to make it open source so they could use it for other weddings or wedding-like events.
+        </p>
+        <p>
+          It's a fairly simple CRUD application, so rails provides an excellent foundation.
+          It's very much a &ldquo;vanilla&rdquo; rails application, with almost no fancy JavaScript.
+          An earlier version used some UJS for Plus One management but getting it to be robust and accessible proved to be quite a lot of work, so I opted for the simpler approach.
+          It does make good use of the rails asset pipeline to build a custom bootstrap theme.
+        </p>
+        <p>
+          I mainly wanted full control over the RSVP fields, for example to ask for song suggestions, and also for guests to be able to manage their own RSVPs.
+          Quite a few people did this, especially for the song suggestions, many of which came in at the last minute!
+          One person registered with two different email addresses and had to be sorted out manually, but overall people seemed to make it through the flow OK.
+        </p>
+        <p>
+          I put together some Docker compose infrastructure to manage the development environment, and in production I hosted the project on Heroku behind Cloudflare.
+          I used hobby dynos for $7/mo to make sure it didn't cause confusion by going to sleep, and also to get SSL.
+          I probably could have hosted it just on Heroku, but Cloudflare provided some nice analytics and a bit of added assurance on the security side (and some caching that works nicely with the rails asset pipeline, to boot).
+          It was interesting to see that within a few minutes of putting it up, we had lots of traffic from China and eastern Europe.
+          Google reCAPTCHAs were quickly added, especially because I used my personal Google Mail SMTP to send email.
+          Fortunately, we didn't have any spam trouble.
+        </p>
+        <p>
+          We did eventually take the data offline to code the dietary requirements for the caterer and to make the seating plan.
+          Potentially we could have asked people to select dietary requirements from a dropdown to avoid this, but we didn't know in advance what categories our caterer would want; it took some manual back and forth, but we got there in the end.
+          There was some manual updating of these two sources of truth in the last couple of weeks, but it wasn't much, and by that point I didn't have time to add a seating planner to the website!
+        </p>
+        <p>
+          I hope this at least provides some ideas for your wedding website, and maybe a good starting point.
+          I've also put some links to other rails wedding websites in the <a href="https://github.com/jdleesmiller/wedding">README</a> on GitHub.
+        </p>
+        <p class="my-5 text-center">
+          <a href="https://github.com/jdleesmiller/wedding" class="btn btn-primary btn-lg">Get Started</a><br/>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -19,6 +19,10 @@ This is a simple rails app for distributing wedding information and managing the
 - Optional invisible [reCAPTCHA](https://www.google.com/recaptcha) integration to avoid spam
 - Sets headers to avoid being indexed by search engines
 
+## What does it look like?
+
+![Screenshot of the home page](docs/homepage_big.jpg)
+
 ## Development
 
 ### Initial Setup
