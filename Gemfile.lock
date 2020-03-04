@@ -157,7 +157,7 @@ GEM
     popper_js (1.14.5)
     powerpack (0.1.1)
     public_suffix (3.0.2)
-    puma (3.12.3)
+    puma (3.12.4)
     rack (2.0.8)
     rack-canonical-host (0.2.3)
       addressable (> 0, < 3)
