@@ -24,5 +24,5 @@ jobs:
     - run: docker-compose --file docker-compose.yml --file docker-compose.ci.yml build
     - run: docker-compose --file docker-compose.yml --file docker-compose.ci.yml up -d db
     - run: docker-compose --file docker-compose.yml --file docker-compose.ci.yml run --rm web bash -lc 'bin/rails db:create db:migrate'
-    - run: docker-compose --file docker-compose.yml --file docker-compose.ci.yml run --rm web bash -lc 'rubocop --lint'
+    - run: docker-compose --file docker-compose.yml --file docker-compose.ci.yml run --rm web bash -lc 'bundle exec rubocop --lint'
     - run: docker-compose --file docker-compose.yml --file docker-compose.ci.yml run --rm web bash -lc 'bin/rails test'
