@@ -1,5 +1,7 @@
 # Rails App for Weddings and Similar Events
 
+![CI status](https://github.com/jdleesmiller/wedding/workflows/CI/badge.svg)
+
 So you're getting married :tada:
 
 This is a simple rails app for distributing wedding information and managing the guest list. You will probably decide to build your own (like me&hellip;) but if you like you can start with this one. It's been through at least one wedding successfully!
