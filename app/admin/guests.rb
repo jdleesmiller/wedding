@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ActiveAdmin.register Guest do
   permit_params :email, :first_name, :last_name, :attending, :diet, :songs,
                 :notes

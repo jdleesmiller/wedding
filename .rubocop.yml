@@ -2,6 +2,7 @@ AllCops:
   Exclude:
     - 'bin/*'
     - 'db/schema.rb'
+  NewCops: enable
 
 Style/ClassAndModuleChildren:
   Exclude:
@@ -17,6 +18,6 @@ Style/Documentation:
     - 'db/**/*'
     - 'test/**/*'
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 80
   IgnoredPatterns: ['\A\s*#']

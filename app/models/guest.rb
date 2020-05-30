@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # A primary guest.
 #
@@ -26,6 +28,7 @@ class Guest < ApplicationRecord
   def email_safe_salutation
     return 'Hello,' if
       first_name.blank? || first_name !~ /\A[\p{Word}\s'-]{1,30}\z/i
+
     "Dear #{first_name},"
   end
 

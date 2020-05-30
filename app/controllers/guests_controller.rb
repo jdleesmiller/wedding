@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class GuestsController < ApplicationController
   def new
     respond_to :html

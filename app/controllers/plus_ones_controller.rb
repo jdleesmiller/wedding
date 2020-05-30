@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PlusOnesController < ApplicationController
   before_action do
     @guest = Guest.find_by_id_token(params[:guest_id])
@@ -41,7 +43,7 @@ class PlusOnesController < ApplicationController
   def destroy
     respond_to :html
     @plus_one = @guest.plus_ones.find_by(id: params[:id])
-    @plus_one.destroy if @plus_one
+    @plus_one&.destroy
     redirect_to guest_plus_ones_path(@guest)
   end
 

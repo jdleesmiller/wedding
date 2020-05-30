@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # A guest or plus one.
 #

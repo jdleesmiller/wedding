@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class GuestMailer < ApplicationMailer
   default from: ENV['FROM_EMAIL'], reply_to: ENV['CONTACT_EMAIL']
 

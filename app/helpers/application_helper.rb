@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ApplicationHelper
   def flash_class(key)
     case key
@@ -10,6 +12,7 @@ module ApplicationHelper
 
   def errors_for(object)
     return unless object.errors.any?
+
     content_tag(:div, class: 'mb-3 card border-danger') do
       concat(content_tag(:div, class: 'card-header bg-danger text-white') do
         concat "Oops, #{pluralize(object.errors.count, 'problem')}:"

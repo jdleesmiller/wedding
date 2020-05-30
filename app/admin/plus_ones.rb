@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ActiveAdmin.register PlusOne do
   permit_params :first_name, :last_name, :diet, :child
 
