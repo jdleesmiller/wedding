@@ -21,7 +21,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - run: cp development.env.template development.env
-    - run: docker-compose build
-    - run: docker-compose up -d db
-    - run: docker-compose run --rm web bash -lc 'bin/rails db:create db:migrate'
-    - run: docker-compose run --rm web bash -lc 'bin/rails test'
+    - run: docker-compose --file docker-compose.yml --file docker-compose.ci.yml build
+    - run: docker-compose --file docker-compose.yml --file docker-compose.ci.yml up -d db
+    - run: docker-compose --file docker-compose.yml --file docker-compose.ci.yml run --rm web bash -lc 'bin/rails db:create db:migrate'
+    - run: docker-compose --file docker-compose.yml --file docker-compose.ci.yml run --rm web bash -lc 'bin/rails test'

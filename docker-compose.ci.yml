@@ -1,0 +1,3 @@
+web:
+  env_file:
+    - development.env.template

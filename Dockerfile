@@ -1,7 +1,5 @@
-FROM ruby:2.5.0
+FROM ruby:2.7.1
 
-# Note: must install newer nodejs to work around
-# https://github.com/docker-library/ruby/issues/226
 RUN apt-get update -qq &&\
   curl -sL https://deb.nodesource.com/setup_10.x | bash - &&\
   apt-get install -y build-essential libpq-dev nodejs &&\
