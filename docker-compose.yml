@@ -1,13 +1,16 @@
-db:
-  image: postgres:10
-  environment:
-    POSTGRES_HOST_AUTH_METHOD: trust
-  ports:
-    - '5432:5432'
+version: '3.8'
 
-web:
-  build: .
-  ports:
-    - '3000:3000'
-  links:
-    - db
+services:
+  db:
+    image: postgres:10
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - '5432:5432'
+
+  web:
+    build: .
+    ports:
+      - '3000:3000'
+    links:
+      - db

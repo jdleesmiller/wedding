@@ -1,6 +1,12 @@
-web:
-  volumes:
-    - .:/home/app/wedding
-    - /usr/local/bundle
-  env_file:
-    - development.env
+version: '3.8'
+
+services:
+  web:
+    volumes:
+      - .:/home/app/wedding
+      - web_bundle:/usr/local/bundle
+    env_file:
+      - development.env
+
+volumes:
+  web_bundle:
