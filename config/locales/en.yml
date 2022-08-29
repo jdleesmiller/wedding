@@ -30,8 +30,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  wedding_name: "Jack & Jill's Wedding"
-  wedding_couple_names: 'Jack & Jill'
-  wedding_date: 'Saturday, 1 January 2000'
-  wedding_location: 'South Pole'
+  wedding_name: "Katie & Travis"
+  wedding_couple_names: 'Katie & Travis'
+  wedding_date: 'Saturday, 10 June 2023'
+  wedding_location: 'McKenzie Bridge, OR'
   photo_credits: 'Photo Credits: Pexels'
