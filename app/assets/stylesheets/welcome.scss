@@ -6,7 +6,7 @@
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
     image-url("jumbo.jpg") center center no-repeat;
   background-size: cover;
-  height: 820px;
+  height: 100vh;
 
   * {
     color: rgba(255, 255, 255, 0.95);
@@ -32,7 +32,7 @@
 
 #welcome-index-venue-leader {
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-    image-url("venue.jpg") center center no-repeat;
+    image-url("lodge.jpg") center center no-repeat;
   background-size: cover;
   margin-top: 5 * $spacer;
 
@@ -41,7 +41,7 @@
   }
 
   h1 {
-    padding: 3 * $spacer 0;
+    padding: 12 * $spacer 0;
   }
 }
 
@@ -59,7 +59,7 @@
 
 #welcome-index-wedding-plan-leader {
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-    image-url("plan.jpg") center center no-repeat;
+    image-url("ranch-lookout.jpg") center center no-repeat;
   background-size: cover;
   margin-top: 5 * $spacer;
 
@@ -68,7 +68,7 @@
   }
 
   h1 {
-    padding: 3 * $spacer 0;
+    padding: 12 * $spacer 0;
   }
 }
 
