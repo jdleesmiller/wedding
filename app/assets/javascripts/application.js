@@ -16,4 +16,3 @@
 //= require bootstrap-sprockets
 
 //= require_tree .
-//= stub active_admin
