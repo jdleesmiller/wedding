@@ -3,17 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #welcome-index-leader {
+  //background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+  //  image-url("jumbo.jpg") center center no-repeat;
+  background: transparent;
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
   image-url("jumbo.jpg") center center no-repeat;
   background-size: cover;
-  height: 820px;
+  height: 100vh;
 
   * {
     color: rgba(255, 255, 255, 0.95);
   }
 
   h1 {
-    margin-top: 200px;
+    margin-top: 160px;
   }
 
   .leader-date {
@@ -32,7 +35,7 @@
 
 #welcome-index-venue-leader {
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-  image-url("venue.jpg") center center no-repeat;
+    image-url("lodge.jpg") center center no-repeat;
   background-size: cover;
   margin-top: 5 * $spacer;
 
@@ -59,7 +62,7 @@
 
 #welcome-index-wedding-plan-leader {
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-  image-url("plan.jpg") center center no-repeat;
+    image-url("plan.jpg") center center no-repeat;
   background-size: cover;
   margin-top: 5 * $spacer;
 

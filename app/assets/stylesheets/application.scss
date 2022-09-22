@@ -14,8 +14,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Arvo:400');
 
-$font-family-sans-serif: Montserrat, Helvetica, Arial, sans-serif;
-$font-family-serif: Arvo, Georgia, "Times New Roman", Times, serif;
+$font-family-sans-serif: brandon-grotesque,'Brandon Grotesque', Futura,sans-serif;
+$font-family-serif: brandon-grotesque,'Brandon Grotesque', Futura,sans-serif;
 
 $font-family-base: $font-family-serif;
 $headings-font-family: $font-family-sans-serif;
@@ -24,7 +24,7 @@ $body-color: rgba(28, 13, 10, 0.7);
 $headings-color: rgba(28, 13, 10, 0.7);
 
 $theme-colors: (
-  "primary": #ff745c
+        "primary": #ff745c
 );
 
 $enable-rounded: false;
@@ -34,7 +34,7 @@ $enable-rounded: false;
 
 h1 {
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 200;
   letter-spacing: 0.0833333em;
   text-transform: uppercase;
 }
@@ -61,4 +61,31 @@ h2 {
 
 .wedding-required {
   color: theme-color("primary");
+}
+
+.navbar-nav {
+  width: 100%;
+  background: #666666;
+
+  li {
+    letter-spacing: 0.12em;
+    font-size: .875em;
+  }
+}
+
+div.scroll {
+  letter-spacing: 0.12em;
+  padding-top: 30%;
+}
+
+.home_video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  top: 0;
+  z-index: -2;
+  filter: brightness(40%);
 }
