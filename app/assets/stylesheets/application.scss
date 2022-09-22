@@ -20,11 +20,19 @@ $font-family-serif: brandon-grotesque,'Brandon Grotesque', Futura,sans-serif;
 $font-family-base: $font-family-serif;
 $headings-font-family: $font-family-sans-serif;
 
+$body-bg: #fdf8f7;
 $body-color: rgba(28, 13, 10, 0.7);
 $headings-color: rgba(28, 13, 10, 0.7);
 
 $theme-colors: (
-        "primary": #ff745c
+        "primary": #f9ad81,
+        "secondary": #b18f3a,
+        "tertiary": #eabf8b,
+        "quaternary": #50b796,
+        "quinary": #e4f1e0,
+        "senary": #f9ded8,
+        "septenary": #7f73ba,
+        "octonary": #fdf8f7
 );
 
 $enable-rounded: false;
@@ -32,7 +40,13 @@ $enable-rounded: false;
 @import "bootstrap";
 @import "welcome";
 
+body {
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+}
+
 h1 {
+  color: theme-color("primary");
   font-size: 60px;
   font-weight: 200;
   letter-spacing: 0.0833333em;
@@ -41,17 +55,23 @@ h1 {
 
 h2 {
   color: theme-color("primary");
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 500;
   line-height: 1.5em;
-  letter-spacing: 0.0833333em;
+  letter-spacing: .2em;
   text-transform: uppercase;
+  margin-top: .5em;
 
   svg {
     fill: currentColor;
     margin: 0 auto;
     height: 100px;
   }
+}
+
+.container-fluid {
+  padding-top: 2em;
+  padding-bottom: 3em;
 }
 
 .wedding-cta-btn {
@@ -65,17 +85,54 @@ h2 {
 
 .navbar-nav {
   width: 100%;
-  background: #666666;
+  background: $body-bg;
 
   li {
     letter-spacing: 0.12em;
-    font-size: .875em;
+    font-size: .675em;
   }
+
+  a.nav-link {
+    color: theme-color("secondary") !important;
+  }
+}
+
+.sans-caps {
+  letter-spacing: .12em;
+}
+
+.larger {
+  font-size: 1.5em;
+}
+
+.title-section {
+  margin-bottom: 2em;
+}
+
+*[class^="iconoir-"], *[class*=" iconoir-"] {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1em;
+  font-size: 2em;
+}
+
+.underline {
+  display: block;
+  width: 60px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #333;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.scroll {
   letter-spacing: 0.12em;
   padding-top: 30%;
+}
+
+.rounded {
+  border-radius: 100% !important;
 }
 
 .home_video {

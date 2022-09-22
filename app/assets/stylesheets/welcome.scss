@@ -27,7 +27,7 @@
   }
 }
 
-#welcome-index-when-where {
+#welcome-index-when-where, #welcome-index-venue {
   h1 {
     padding: 3 * $spacer 0;
   }
@@ -50,14 +50,22 @@
 
 #welcome-index-venue {
   h2 {
-    padding-top: 3 * $spacer;
+    padding-top: $spacer;
     padding-bottom: $spacer;
     text-align: center;
   }
 
-  p {
-    text-align: justify;
+  h1, h2, p {
+    color: theme-color("octonary");
   }
+
+  img {
+    width: 350px;
+  }
+
+  //p {
+  //  text-align: justify;
+  //}
 }
 
 #welcome-index-wedding-plan-leader {

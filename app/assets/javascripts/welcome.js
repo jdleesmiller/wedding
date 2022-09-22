@@ -14,4 +14,10 @@ $(function () {
     $('.navbar-collapse a').click(function (e) {
         $('.navbar-collapse').collapse('toggle');
     });
+
+    $(function () {
+        setInterval(function () {
+            $('.scroll').fadeIn(1000).delay(600).fadeOut(1000).delay(50).fadeIn(1000);
+        }, 2000);
+    });
 })
