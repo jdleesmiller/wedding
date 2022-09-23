@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#welcome-index-leader {
+#hero {
   //background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
   //  image-url("jumbo.jpg") center center no-repeat;
   background: transparent;
@@ -27,63 +27,50 @@
   }
 }
 
-#welcome-index-when-where, #welcome-index-venue {
+#when-where, #destination {
   h1 {
     padding: 3 * $spacer 0;
   }
 }
+//
+//#destination-leader {
+//  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+//    image-url("lodge.jpg") center center no-repeat;
+//  background-size: cover;
+//  margin-top: 5 * $spacer;
+//
+//  * {
+//    color: rgba(255, 255, 255, 0.95);
+//  }
+//
+//  h1 {
+//    padding: 3 * $spacer 0;
+//  }
+//}
 
-#welcome-index-venue-leader {
-  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-    image-url("lodge.jpg") center center no-repeat;
-  background-size: cover;
-  margin-top: 5 * $spacer;
-
-  * {
-    color: rgba(255, 255, 255, 0.95);
-  }
-
-  h1 {
-    padding: 3 * $spacer 0;
-  }
-}
-
-#welcome-index-venue {
-  h2 {
+#destination {
+  h2, h3 {
     padding-top: $spacer;
     padding-bottom: $spacer;
     text-align: center;
   }
 
-  h1, h2, p {
+  h2, h3, p {
     color: theme-color("octonary");
   }
 
   img {
     width: 350px;
   }
-
-  //p {
-  //  text-align: justify;
-  //}
 }
 
-#welcome-index-wedding-plan-leader {
-  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-    image-url("plan.jpg") center center no-repeat;
-  background-size: cover;
-  margin-top: 5 * $spacer;
-
-  * {
-    color: rgba(255, 255, 255, 0.95);
-  }
-
-  h1 {
-    padding: 3 * $spacer 0;
+#getting-there {
+  h2, h3, p {
+    color: theme-color("octonary")
   }
 }
 
-#welcome-index-wedding-plan {
+#schedule {
   h2 {
     padding-top: 3 * $spacer;
     padding-bottom: $spacer;
@@ -93,7 +80,28 @@
   p {
     text-align: justify;
   }
+
+  //p {
+  //  text-align: justify;
+  //}
 }
+
+//#lodging-leader {
+//  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+//    image-url("plan.jpg") center center no-repeat;
+//  background-size: cover;
+//  margin-top: 5 * $spacer;
+//
+//  * {
+//    color: rgba(255, 255, 255, 0.95);
+//  }
+//
+//  h1 {
+//    padding: 3 * $spacer 0;
+//  }
+//}
+
+
 
 #welcome-index-footer {
   background-color: #faebe3;

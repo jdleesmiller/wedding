@@ -55,7 +55,7 @@ h1 {
 
 h2 {
   color: theme-color("primary");
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.5em;
   letter-spacing: .2em;
@@ -82,6 +82,10 @@ h2 {
 .wedding-required {
   color: theme-color("primary");
 }
+
+//nav {
+//  max-width: 100vw;
+//}
 
 .navbar-nav {
   width: 100%;
