@@ -1,32 +1,40 @@
-<section id="welcome-index-when-where">
+<section id="when-where">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>When &amp; Where</h1>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6 text-center">
+        <div class="title-section">
+          <i class="iconoir-heart"></i>
+          <h2>Who</h2>
+          <span class="underline"></span>
+        </div>
+        <h3>Our dearest friends and family</h3>
+        <p class="sans-caps">FROM NEAR AND AFAR</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6 text-center">
-        <h2><%= link_to 'wedding.ics' do -%>
-          <%= render partial: 'calendar_svg' %>
-        <%- end %></h2>
-        <p>
-          <strong>12:30pm &ndash; late</strong><br>
-          <%= t :wedding_date %><br>
-          &nbsp;<br>
-        </p>
-        <p><%= link_to 'Add to Calendar', 'wedding.ics' %></p>
+        <div class="title-section">
+          <i class="iconoir-wristwatch"></i>
+          <h2>When</h2>
+          <span class="underline"></span>
+        </div>
+        <h3><%= t :wedding_date %></h3>
+        <p class="sans-caps">3:30pm &ndash; late</p>
+        <button type="button" class="btn btn-outline-primary">
+          <%= link_to 'Add to Calendar', 'wedding.ics' %>
+        </button>
       </div>
       <div class="col-md-6 text-center">
-        <h2><%= link_to @google_maps_url do -%>
-          <%= render partial: 'map_marker_svg' %>
-        <%- end %></h2>
-        <p>
-          <%= render partial: 'wedding_address' %>
-        </p>
-        <p>
-          <%= link_to 'Google Maps', @google_maps_url %>
-        </p>
+        <div class="title-section">
+          <i class="iconoir-pine-tree"></i>
+          <h2>Where</h2>
+          <span class="underline"></span>
+        </div>
+        <h3><%= render partial: 'wedding_address' %></h3>
+        <p class="sans-caps">McKenzie Bridge, Oregon</p>
+        <button type="button" class="btn btn-outline-primary">
+          <%= link_to @google_maps_url do -%>Find on a map<%- end %>
+        </button>
       </div>
     </div>
   </div>

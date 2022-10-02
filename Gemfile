@@ -22,16 +22,13 @@ gem 'uglifier', '>= 1.3.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-
-gem 'activeadmin'
-gem 'devise'
-
 gem 'auto_strip_attributes'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'rack-canonical-host'
-gem 'recaptcha', require: 'recaptcha/rails'
-gem 'scenic'
+
+# Reduces boot times through caching; required in config/boot.rb
+gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem 'rubocop'
