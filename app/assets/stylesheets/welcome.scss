@@ -27,11 +27,13 @@
   }
 }
 
-#destination, #getting-there, #when-where {
+#destination, #getting-there, #when-where, #schedule, #activities, #lodging {
   h2, h3 {
     text-align: center;
   }
 
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 #destination, #getting-there {
@@ -98,6 +100,12 @@
 
   a {
     color: rgba(28, 13, 10, 0.7);
+  }
+}
+
+#lodging {
+  img {
+    width: 80%;
   }
 }
 
