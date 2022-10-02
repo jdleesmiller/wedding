@@ -27,12 +27,14 @@
   }
 }
 
-#destination, #getting-there, #when-where {
+#destination, #getting-there, #when-where, #schedule, #activities, #lodging {
   h2, h3 {
     text-align: center;
 
   }
 
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 #destination, #getting-there {
@@ -102,8 +104,6 @@
   }
 }
 
-<<<<<<< Updated upstream
-=======
 #lodging {
   img {
     width: 80%;
@@ -126,7 +126,6 @@
   }
 }
 
->>>>>>> Stashed changes
 #welcome-index-footer {
   background-color: #faebe3;
   margin-top: 5 * $spacer;
