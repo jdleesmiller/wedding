@@ -55,18 +55,26 @@ h1 {
 
 h2 {
   color: theme-color("primary");
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 1.5em;
   letter-spacing: .2em;
   text-transform: uppercase;
   margin-top: .5em;
+  margin-bottom: .5em;
 
   svg {
     fill: currentColor;
     margin: 0 auto;
     height: 100px;
   }
+}
+
+h4 {
+  font-family: 'Surveyor Display', 'Surveyor Display A', 'Surveyor Display B', serif;
+  font-size: 1.575rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .container-fluid {

@@ -27,34 +27,14 @@
   }
 }
 
-#when-where, #destination {
-  h1 {
-    padding: 3 * $spacer 0;
-  }
-}
-//
-//#destination-leader {
-//  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-//    image-url("lodge.jpg") center center no-repeat;
-//  background-size: cover;
-//  margin-top: 5 * $spacer;
-//
-//  * {
-//    color: rgba(255, 255, 255, 0.95);
-//  }
-//
-//  h1 {
-//    padding: 3 * $spacer 0;
-//  }
-//}
-
-#destination {
+#destination, #getting-there, #when-where {
   h2, h3 {
-    padding-top: $spacer;
-    padding-bottom: $spacer;
     text-align: center;
   }
 
+}
+
+#destination, #getting-there {
   h2, h3, p {
     color: theme-color("octonary");
   }
@@ -65,43 +45,61 @@
 }
 
 #getting-there {
-  h2, h3, p {
-    color: theme-color("octonary")
+  i {
+    color: theme-color("octonary");
+    margin: .5em auto;
+    font-size: 3em;
   }
 }
 
 #schedule {
   h2 {
-    padding-top: 3 * $spacer;
-    padding-bottom: $spacer;
-    text-align: center;
+    color: #000;
   }
 
   p {
     text-align: justify;
   }
 
-  //p {
-  //  text-align: justify;
-  //}
+  .nav-item {
+    font-size: 2em;
+    letter-spacing: 5px;
+  }
+
+  .nav-tabs, .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: transparent;
+    border: none;
+  }
+
+  .nav-tabs .nav-item a {
+    color: #000;
+  }
+
+  .table th, .table td {
+    border: none;
+  }
+
+  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus, .nav-tabs .nav-item a.active {
+    color: theme-color("secondary");
+    border: none;
+  }
 }
 
-//#lodging-leader {
-//  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-//    image-url("plan.jpg") center center no-repeat;
-//  background-size: cover;
-//  margin-top: 5 * $spacer;
-//
-//  * {
-//    color: rgba(255, 255, 255, 0.95);
-//  }
-//
-//  h1 {
-//    padding: 3 * $spacer 0;
-//  }
-//}
+#activities {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 
+  li {
+    padding-bottom: .6em;
+    line-height: 1.2em;
+  }
 
+  a {
+    color: rgba(28, 13, 10, 0.7);
+  }
+}
 
 #welcome-index-footer {
   background-color: #faebe3;

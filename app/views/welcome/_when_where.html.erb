@@ -1,5 +1,5 @@
 <section id="when-where">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row justify-content-center mb-4">
       <div class="col-md-6 text-center">
         <div class="title-section">
@@ -7,7 +7,7 @@
           <h2>Who</h2>
           <span class="underline"></span>
         </div>
-        <p class="larger">Our dearest friends and family</p>
+        <h3>Our dearest friends and family</h3>
         <p class="sans-caps">FROM NEAR AND AFAR</p>
       </div>
     </div>
@@ -18,7 +18,7 @@
           <h2>When</h2>
           <span class="underline"></span>
         </div>
-        <p class="larger"><%= t :wedding_date %></p>
+        <h3><%= t :wedding_date %></h3>
         <p class="sans-caps">3:30pm &ndash; late</p>
         <button type="button" class="btn btn-outline-primary">
           <%= link_to 'Add to Calendar', 'wedding.ics' %>
@@ -30,7 +30,7 @@
           <h2>Where</h2>
           <span class="underline"></span>
         </div>
-        <p class="larger"><%= render partial: 'wedding_address' %></p>
+        <h3><%= render partial: 'wedding_address' %></h3>
         <p class="sans-caps">McKenzie Bridge, Oregon</p>
         <button type="button" class="btn btn-outline-primary">
           <%= link_to @google_maps_url do -%>Find on a map<%- end %>

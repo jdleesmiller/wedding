@@ -1,34 +1,188 @@
-<section id="schedule">
+<section id="schedule" class="bg-quinary">
   <div class="container">
     <div class="row">
-      <div class="offset-md-3 col-md-6">
-        <h2>Order of the Day</h2>
-        <p><strong>12:30pm</strong> &mdash; Guests arrive</p>
-        <p><strong>1pm</strong> &mdash; Wedding service</p>
-        <p><strong>1:30pm</strong> &mdash; Cocktails, photos, confetti and canapes</p>
-        <p><strong>3pm-6pm</strong> &mdash; Food and drink</p>
-        <p><strong>7pm</strong> &mdash; Cutting of the cake! Drinking, dancing!</p>
-        <p><strong>12am</strong> &mdash; Bar closes</p>
-        <p>There will be a tab for the evening, followed by a cash bar.</p>
-        <p><strong>Dress code</strong> is warm.</p>
-        <h2>Gifts &amp; Cards</h2>
-        <p>We'd be pleased if you made a donation to charity rather than bringing a gift. Our goal is to raise £1,000 for <%= link_to 'Cool Earth', @cool_earth_url %>, the non-profit that works alongside rainforest communities to halt deforestation and climate change.</p>
-        <p class="text-center"><%= link_to 'Donate to Cool Earth', @cool_earth_url, class: 'btn btn-primary wedding-cta-btn' %></p>
-        <p>If you'd like to send us a card, we'll send you our mailing address by email once you RSVP.</p>
-        <h2>Menu</h2>
-        <p><strong>Starter</strong> &mdash; Home Cured Salmon Gravadlax with Horseradish Cream &amp; Beetroot Tart <sup>*</sup> &dagger;</p>
-        <p><strong>Main</strong> &mdash; Fricassee of Chicken with Lyonnaise Potato &ddagger;</p>
-        <p><strong>Dessert</strong> &mdash; Choux Swan with Chocolate & Brandy Sauce <sup>&sect;</sup></p>
-        <p><strong>Children's Menu</strong>: Garlic bread, chicken goujons and chips, ice cream.</p>
-        <ul class="list-unstyled">
-          <li><small><sup>*</sup> Gluten free &amp; vegan starter: Tomato soup</small></li>
-          <li><small>&dagger; Gluten free &amp; dairy free starter: Gravadlax served without tart</small></li>
-          <li><small>&ddagger; Main is gluten free. Vegan main: Aubergine &amp; Black Bean Chilli with Cumin Rice</small></li>
-          <li><small><sup>&sect;</sup> Vegan, gluten free &amp; dairy free dessert: Fruit platter</small></li>
+      <div class="col-md-12 text-center">
+        <div class="title-section">
+          <h2>Schedule</h2>
+          <span class="underline"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8 text">
+        <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+          <li class="nav-item text-left">
+            <a class="nav-link active"
+               id="friday-tab"
+               data-toggle="tab"
+               href="#friday"
+               role="tab"
+               aria-controls="home"
+               aria-selected="true">FRIDAY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+               id="saturday-tab"
+               data-toggle="tab"
+               href="#saturday"
+               role="tab"
+               aria-controls="profile"
+               aria-selected="false">SATURDAY</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link"
+               id="sunday-tab"
+               data-toggle="tab"
+               href="#sunday"
+               role="tab"
+               aria-controls="messages"
+               aria-selected="false">SUNDAY</a>
+          </li>
         </ul>
-        <p>The venue is making every effort to cater for vegan, vegetarian, gluten free, allergies and other dietary preferences, as indicated in your RSVPs.</p>
-        <h2>RSVPs</h2>
-        <p>Please RSVP as soon as possible, so we know who is coming and can make sure we keep a seat and a piece of cake for you if you can come! If it turns out you can’t make it, please let us know as soon as you can.</p>
+        <div class="tab-content">
+          <div class="tab-pane active" id="friday" role="tabpanel" aria-labelledby="friday-tab">
+            <table class="table table-hover">
+              <tbody>
+              <tr>
+                <td>
+                  <h4>flower harvest</h4>
+                  <p>
+                    Family and Bridal Party - Ladies Only
+                    <br />
+                    Dress: Casual
+                  </p>
+                </td>
+                <td>8:00 to 10:00am</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>welcome party</h4>
+                  <p>
+                    Everyone
+                    <br />
+                    Dress: Casual
+                  </p>
+                </td>
+                <td>9:00am to 12:00pm</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>rehearsal</h4>
+                  <p>
+                    Wedding Party
+                    <br />
+                    Dress: Casual
+                  </p>
+                </td>
+                <td>3:00 to 5:00pm</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>rehearsal dinner</h4>
+                  <p>
+                    Everyone
+                    <br />
+                    Dress: Casual
+                  </p>
+                </td>
+                <td>6:00 to 9:00pm</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>campfire</h4>
+                  <p>
+                    Everyone
+                    <br>
+                    Dress: Warm (we'll have blankets!)
+                  </p>
+                </td>
+                <td>9:00pm to late</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane" id="saturday" role="tabpanel" aria-labelledby="saturday-tab">
+            <table class="table table-hover">
+              <tbody>
+              <tr>
+                <td>
+                  <h4>coffee & brunch</h4>
+                  <p>
+                    Everyone
+                    <br />
+                    Dress: Casual
+                  </p>
+                </td>
+                <td>8:00 to 10:30am</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>ceremony</h4>
+                  <p>
+                    Everyone
+                    <br />
+                    Dress: Semi-formal
+                  </p>
+                </td>
+                <td>4:20 to 5:00pm</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>cocktail/cannabis hour</h4>
+                  <p>
+                    Everyone
+                  </p>
+                </td>
+                <td>5:00 to 6:00pm</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>dinner</h4>
+                  <p>
+                    Everyone
+                  </p>
+                </td>
+                <td>6:30 to 7:30pm</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>dance</h4>
+                  <p>
+                    Everyone
+                  </p>
+                </td>
+                <td>7:30 to late</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane" id="sunday" role="tabpanel" aria-labelledby="sunday-tab">
+            <table class="table table-hover">
+              <tbody>
+              <tr>
+                <td>
+                  <h4>farewell picnic</h4>
+                  <p>
+                    Everyone
+                    <br />
+                    Dress: Casual
+                  </p>
+                </td>
+                <td>
+                  10:00 to 2:00pm
+                <br>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+<!--        <script>-->
+<!--            $(function () {-->
+<!--                $('#myTab li:last-child a').tab('show')-->
+<!--            })-->
+<!--        </script>-->
       </div>
     </div>
   </div>
