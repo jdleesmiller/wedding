@@ -27,7 +27,7 @@
   }
 }
 
-#destination, #getting-there, #when-where, #schedule, #activities, #lodging {
+#destination, #getting-there, #when-where, #schedule, #activities, #lodging, #faq {
   h2, h3 {
     text-align: center;
 
@@ -114,6 +114,18 @@
   }
 }
 
+#faq {
+  h3 {
+    color: theme-color("octonary");
+    padding-top: 1em;
+  }
+
+  .card, .card-header {
+    background-color: transparent;
+    border: none;
+  }
+}
+
 #registry {
     background: image-url("plants.jpeg") center center no-repeat;
     background-size: cover;
@@ -146,7 +158,7 @@
 }
 
 @media screen and (max-width: 667px) {
-  #destination, #getting-there, #when-where, #schedule, #activities, #lodging {
+  #destination, #getting-there, #when-where, #schedule, #activities, #lodging, #faq {
 
     h2 {
       font-size: 2.25rem;
