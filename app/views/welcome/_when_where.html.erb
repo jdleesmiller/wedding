@@ -20,12 +20,12 @@
         </div>
         <h3><%= t :wedding_date %></h3>
         <p class="sans-caps">3:30pm &ndash; late</p>
-        <button type="button" class="btn btn-outline-primary">
-          <%= link_to 'Add to Calendar',
-                      'https://calendar.google.com/event?action=TEMPLATE&tmeid=MXM4cGt1NWxibzJ2MXU1dGQ3OGMwMWtvb24gbXlyaWNrdGNAbQ&tmsrc=myricktc%40gmail.com',
-                      target: "_blank"
-          %>
-        </button>
+        <a class="btn btn-outline-primary"
+           href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MXM4cGt1NWxibzJ2MXU1dGQ3OGMwMWtvb24gbXlyaWNrdGNAbQ&tmsrc=myricktc%40gmail.com"
+           role="button"
+           target="_blank">
+          Add to Calendar
+        </a>
       </div>
       <div class="col-md-6 text-center">
         <div class="title-section">
@@ -35,9 +35,13 @@
         </div>
         <h3><%= render partial: 'wedding_address' %></h3>
         <p class="sans-caps">McKenzie Bridge, Oregon</p>
-        <button type="button" class="btn btn-outline-primary">
-          <%= link_to @google_maps_url,  target: "_blank" do -%>Find on a map<%- end %>
-        </button>
+
+        <a class="btn btn-outline-primary"
+           href="https://g.page/LolomaLodge?share"
+           role="button"
+           target="_blank">
+          Find on a map
+        </a>
       </div>
     </div>
   </div>
