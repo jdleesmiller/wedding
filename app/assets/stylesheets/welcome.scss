@@ -27,6 +27,12 @@
   }
 }
 
+#when-where {
+  .btn-outline-primary:hover {
+    color: #F7F7F7;
+  }
+}
+
 #destination, #getting-there, #when-where, #schedule, #activities, #lodging, #faq {
   h2, h3 {
     text-align: center;
@@ -52,6 +58,10 @@
     color: theme-color("octonary");
     margin: .5em auto;
     font-size: 3em;
+  }
+
+  .btn-outline-octonary:hover {
+    color: theme-color("secondary");
   }
 }
 
@@ -100,7 +110,12 @@
   }
 
   a {
-    color: rgba(28, 13, 10, 0.7);
+    color: theme-color("primary");
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: theme-color("septenary");
   }
 }
 
