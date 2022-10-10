@@ -33,7 +33,7 @@
   }
 }
 
-#destination, #getting-there, #when-where, #schedule, #activities, #lodging, #faq {
+#destination, #getting-there, #when-where, #schedule, #activities, #lodging, #faq, #rsvp {
   h2, h3 {
     text-align: center;
 
@@ -153,6 +153,12 @@
   }
 }
 
+#rsvp {
+  h2 {
+    color: theme-color("octonary");
+  }
+}
+
 #welcome-index-footer {
   background-color: #faebe3;
   margin-top: 5 * $spacer;
@@ -173,7 +179,7 @@
 }
 
 @media screen and (max-width: 667px) {
-  #destination, #getting-there, #when-where, #schedule, #activities, #lodging, #faq {
+  #destination, #getting-there, #when-where, #schedule, #activities, #lodging, #faq, #rsvp {
 
     h2 {
       font-size: 2.25rem;
