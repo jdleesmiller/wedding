@@ -75,8 +75,8 @@
   }
 
   .nav-item {
-    font-size: 2em;
-    letter-spacing: 5px;
+    font-size: 1.6em;
+    letter-spacing: 4px;
   }
 
   .nav-tabs, .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
@@ -186,8 +186,14 @@
     }
   }
 
-  #schedule .nav-item {
-    font-size: .8em;
-    letter-spacing: 3px;
+  #schedule {
+    .nav-item {
+      font-size: .7em;
+      letter-spacing: 2px;
+    }
+
+    .nav-link {
+      padding: 0.5rem .1rem
+    }
   }
 }
