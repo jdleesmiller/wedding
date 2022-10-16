@@ -31,6 +31,10 @@
   .btn-outline-primary:hover {
     color: #F7F7F7;
   }
+
+  .btn {
+    margin-bottom: 2em;
+  }
 }
 
 #destination, #getting-there, #when-where, #schedule, #activities, #lodging, #faq, #rsvp {
@@ -72,8 +76,8 @@
     color: theme-color("octonary");
   }
 
-  p {
-    text-align: justify;
+  p, tr {
+    font-size: 1rem;
   }
 
   .nav-item {
