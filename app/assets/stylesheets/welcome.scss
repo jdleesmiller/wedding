@@ -3,11 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #hero {
-  //background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-  //  image-url("jumbo.jpg") center center no-repeat;
   background: transparent;
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-  image-url("jumbo.jpg") center center no-repeat;
+  url("https://kt-wedding.s3.us-west-2.amazonaws.com/jumbo.jpg") center center no-repeat;
   background-size: cover;
   height: 100vh;
 
@@ -28,12 +26,24 @@
 }
 
 #when-where {
+  h2 {
+    color: theme-color("tertiary");
+  }
+
+  i {
+    color: theme-color("quaternary");
+  }
+
   .btn-outline-primary:hover {
     color: #F7F7F7;
   }
 
   .btn {
     margin-bottom: 2em;
+  }
+
+  .underline {
+    border-bottom-color: theme-color("primary");
   }
 }
 
@@ -55,6 +65,10 @@
   img {
     width: 350px;
   }
+}
+
+#destination {
+
 }
 
 #getting-there {
@@ -171,7 +185,7 @@
 }
 
 #registry {
-    background: image-url("plants.jpeg") center center no-repeat;
+    background: url("https://kt-wedding.s3.us-west-2.amazonaws.com/plants.jpg") center center no-repeat;
     background-size: cover;
 
   .card {
