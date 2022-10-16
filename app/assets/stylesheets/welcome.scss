@@ -31,10 +31,10 @@
   }
 
   i {
-    color: theme-color("quaternary");
+    color: theme-color("primary");
   }
 
-  .btn-outline-primary:hover {
+  .btn-outline-tertiary:hover {
     color: #F7F7F7;
   }
 
@@ -43,7 +43,7 @@
   }
 
   .underline {
-    border-bottom-color: theme-color("primary");
+    border-bottom-color: theme-color("tertiary");
   }
 }
 
