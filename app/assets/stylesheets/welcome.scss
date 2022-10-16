@@ -66,8 +66,10 @@
 }
 
 #schedule {
-  h2 {
-    color: #000;
+  color: theme-color("octonary");
+
+  h2, h4, p, td {
+    color: theme-color("octonary");
   }
 
   p {
@@ -85,7 +87,7 @@
   }
 
   .nav-tabs .nav-item a {
-    color: #000;
+    color: theme-color("octonary");
   }
 
   .table th, .table td {
@@ -94,11 +96,19 @@
 
   .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus, .nav-tabs .nav-item a.active {
     color: theme-color("secondary");
-    border: none;
+    border-color: theme-color("quinary") theme-color("quinary") theme-color("secondary");
+  }
+
+  #schedule-tab {
+    padding-bottom: 2em;
   }
 }
 
 #activities {
+  h2 {
+    color: theme-color("secondary");
+  }
+
   ul {
     list-style: none;
     padding-left: 0;
@@ -110,16 +120,19 @@
   }
 
   a {
-    color: theme-color("primary");
+    color: theme-color("secondary");
     text-decoration: underline;
   }
 
   a:hover {
-    color: theme-color("septenary");
+    color: theme-color("quinary");
   }
 }
 
 #lodging {
+  h2, h4, p {
+    color: theme-color("octonary");
+  }
   img {
     width: 80%;
   }
@@ -127,12 +140,24 @@
   .btn {
     margin-bottom: .75em;
   }
+
+  .underline {
+    border-bottom-color: theme-color("octonary");
+  }
 }
 
 #faq {
+  h2 {
+    color: theme-color("tertiary");
+  }
+
   h3 {
     color: theme-color("octonary");
     padding-top: 1em;
+  }
+
+  .btn-link {
+    color: theme-color("tertiary");
   }
 
   .card, .card-header {
