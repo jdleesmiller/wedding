@@ -24,15 +24,26 @@ $body-bg: #fdf8f7;
 $body-color: rgba(28, 13, 10, 0.7);
 $headings-color: rgba(28, 13, 10, 0.7);
 
+//$theme-colors: (
+//        "primary": #f9ad81,
+//        "secondary": #b18f3a,
+//        "tertiary": #eabf8b,
+//        "quaternary": #50b796,
+//        "quinary": #e4f1e0,
+//        "senary": #f9ded8,
+//        "septenary": #7f73ba,
+//        "octonary": #fdf8f7
+//);
+
 $theme-colors: (
-        "primary": #f9ad81,
-        "secondary": #b18f3a,
-        "tertiary": #eabf8b,
-        "quaternary": #50b796,
-        "quinary": #e4f1e0,
-        "senary": #f9ded8,
+        "primary": #a34829,
+        "secondary": #d17220,
+        "tertiary": #df9453,
+        "quaternary": #41766e,
+        "quinary": #216975,
+        "senary": #09454f,
         "septenary": #7f73ba,
-        "octonary": #fdf8f7
+        "octonary": #F7F7F7
 );
 
 $enable-rounded: false;
@@ -43,6 +54,7 @@ $enable-rounded: false;
 body {
   font-feature-settings: "kern","liga","pnum";
   -webkit-font-smoothing: antialiased;
+  font-size: 1.1rem;
 }
 
 h1 {
@@ -89,6 +101,10 @@ h4 {
 
 .wedding-required {
   color: theme-color("primary");
+}
+
+.btn {
+  font-size: 1.2em !important;
 }
 
 //nav {
